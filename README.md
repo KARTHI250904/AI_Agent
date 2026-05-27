@@ -49,4 +49,95 @@ The Ethical Security AI Agent detects suspicious employee activities and insider
 - Install MySQL or XAMPP
 - Install VS Code / PyCharm
 
+---
 
+## 2️⃣ Clone the Project
+
+```bash
+git clone https://github.com/your-username/ethical-security-ai-agent.git
+
+
+3️⃣ Install Required Packages
+
+pip install -r requirements.txt
+
+4️⃣ Configure Database
+
+Create a MySQL database:
+CREATE DATABASE security_agent;
+
+
+5️⃣ Update .env File
+
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=your_password
+MYSQL_DATABASE=security_agent
+
+
+6️⃣ Run FastAPI Backend
+
+uvicorn backend:app --reload
+
+
+7️⃣ Run Streamlit Frontend
+
+streamlit run agent.py
+
+
+🌐 Application URLs
+
+FastAPI Backend
+http://127.0.0.1:8000
+
+Streamlit Frontend
+http://localhost:8501
+
+🔑 Demo Login Credentials
+
+Admin Login
+Username: admin
+Password: 1234admin
+
+
+📂 Project Modules
+
+agent.py → Streamlit Frontend
+backend.py → FastAPI Backend
+model.py → Machine Learning Model
+auth.py → JWT Authentication
+database.py → MySQL Database Connection
+logs.csv → Activity Logs
+requirements.txt → Required Packages
+
+
+🤖 Machine Learning Used
+
+Isolation Forest
+Used for:
+Anomaly Detection
+Insider Threat Detection
+Risk Prediction
+
+SHAP Explainability
+Used for:
+Feature Importance
+AI Decision Explanation
+Transparent Security Analysis
+
+📊 System Workflow
+
+User logs into the system
+Employee activity data is entered
+AI model analyzes behavior
+Risk score is generated
+Threat level is classified
+AI explanation is displayed
+Email alert is sent
+Logs are stored in database
+
+
+👨‍💻 Developed By
+
+ MCA Student
