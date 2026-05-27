@@ -1,0 +1,14 @@
+streamlit
+openai
+pandas
+matplotlib
+fastapi
+uvicorn
+mysql-connector-python
+python-dotenv
+requests
+scikit-learn
+shap
+numpy
+passlib[bcrypt]
+python-jose
